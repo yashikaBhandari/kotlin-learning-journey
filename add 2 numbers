@@ -1,0 +1,27 @@
+ // to add two numbers package
+ /* fun addNumbers(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun main() {
+    val num1 = 5
+    val num2 = 10
+    val sum = addNumbers(num1, num2)
+    println("The sum of $num1 and $num2 is: $sum")
+}*/
+
+
+//
+
+fun main() {
+    var a = 10
+    var b = 20
+    var A=90   (case sensitivity )
+    val c = a + b+ A
+    println("The sum of $a and $b and $A is: $c")
+}
+
+
+
+
+

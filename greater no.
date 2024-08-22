@@ -1,0 +1,15 @@
+//check which no. is greater or smaller  without using if-else
+
+
+
+
+/*fun main() {
+    val num1 = 23
+    val num2 = 10
+
+    val greater = maxOf(num1, num2)
+    val smaller = minOf(num1, num2)
+
+    println("$greater is greater")
+    println("$smaller is smaller")
+}*/

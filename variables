@@ -1,0 +1,20 @@
+
+// printing hello world 
+
+
+fun main() {
+    println("Hello, World!")
+}
+
+// variables and constants 
+
+fun main() {
+    var a = 10 // mutable variable
+    val b = 20 // immutable variable (constant)
+
+    mutableVar = 15 // OK
+    // b = 25 // Error: Val cannot be reassigned
+
+    println("Mutable: $a, Immutable: $b")
+}
+

@@ -18,3 +18,12 @@ fun main() {
     println("Mutable: $a, Immutable: $b")
 }
 
+
+
+// accessing variables 
+
+
+fun main(){
+    var age:Int =89
+    println(age)
+}

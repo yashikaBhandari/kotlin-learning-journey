@@ -1,0 +1,52 @@
+// datatypes 
+
+
+fun main() {
+    val a: Byte = 8
+    val b: Short = 16
+    val c: Int = 32
+    val d: Long = 64L
+
+    println("Byte: $a")
+    println("Short: $b")
+    println("Int: $c")
+    println("Long: $d")
+}
+
+
+// char 
+
+fun main() {
+    val myChar: Char = 'A'
+    println("Char: $myChar")
+}
+
+
+// Boolean 
+
+fun main() {
+    val a: Boolean = true
+    val b: Boolean = false
+
+    println("Boolean True: $a")
+    println("Boolean False: $b")
+}
+// String 
+
+
+fun main() {
+    val myString: String = "Hello, Kotlin!"
+    println("String: $myString")
+}
+
+
+//Array 
+
+
+fun main() {
+    val myArray: Array<Int> = arrayOf(1, 2, 3, 4, 5)
+    println("Array element at index 0: ${myArray[0]}")
+    println("Array size: ${myArray.size}")
+}
+
+//

@@ -27,3 +27,17 @@ fun main(){
     var age:Int =89
     println(age)
 }
+// 
+
+
+// string interpolation with $
+
+
+/*fun main(){
+    val a=10
+    val b=34
+    val result =" sum of a and b is  ${a+b} "
+    print(result)
+    
+    
+}

@@ -1,0 +1,33 @@
+//loops
+
+
+// down to 
+// Counting Down from 5 to 1
+fun main() {
+    for (i in 5 downTo 1) {
+        println("Countdown: $i")
+    }
+}
+
+//Counting from 1 to 4 (not including 5)
+fun main() {
+    for (i in 1 until 5) {
+        println("Iteration: $i")
+    }
+}
+
+// using step 
+fun main() {
+    for (i in 10 downTo 1 step 2) {
+        println("Countdown: $i")
+    }
+}
+// until
+// Counting from 1 to 4 (not including 5)
+fun main() {
+    for (i in 1 until 5) {
+        println("Iteration: $i")
+    }
+}
+// 
+

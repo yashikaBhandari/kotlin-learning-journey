@@ -1,0 +1,70 @@
+//arrayOf(): Creates an array of the specified elements.
+
+//val array = arrayOf(1, 2, 3)
+
+fun main(){
+val array = arrayOf(1, 2, 3)
+println(array[0])
+}
+
+
+
+// 
+Array(): Creates an array using a lambda function to initialize the values.
+val array = Array(3) { i -> i * 2 }
+
+
+// intArrayOf(), doubleArrayOf(), charArrayOf(): Create arrays of primitive types
+
+val intArray = intArrayOf(1, 2, 3)
+
+//get(index: Int): Returns the element at the specified index.
+
+fun main(){
+val array = arrayOf(1, 2, 3)
+val element = array.get(2)
+print(element)  // 3 
+
+}
+
+//set(index: Int, value: T): Sets the element at the specified index.
+
+
+fun main(){
+val array = arrayOf(1, 2, 3)
+val element = array.get(2)
+print(element)  // 3
+array.set(1, 10)
+
+
+}
+
+
+[] Operator: Another way to get or set an element.
+
+val element = array[1]
+array[1] = 10
+
+// Array Properties
+
+// size: Returns the number of elements in the array.
+//val size = array.size  
+//isEmpty(): Checks if the array is empty.
+val empty = array.isEmpty()
+//isNotEmpty(): Checks if the array is not empty.
+
+val notEmpty = array.isNotEmpty()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+// real life application 
+// the task is to create a Kotlin program for a store to determine eligibility for a special offer based on the total amount of a purchase and membership status.
+fun main() {
+    // Step 2: Define two variables
+    val totalAmount = 1200  // Example total amount of purchase
+    val hasMembership = true  // Example membership status
+
+    // Step 3: Implement the logic
+    if (totalAmount >= 1000) {
+        if (hasMembership) {
+            println("You are eligible for a 20% discount!")
+        } else {
+            println("You are eligible for a 10% discount!")
+        }
+    } else {
+        println("No discount available.")
+    }
+}
+__________________________________________________________________________________________________________________________________________________________________
+// calculator 
+
+
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    println("Enter first number:")
+    val num1 = scanner.nextDouble()
+
+    println("Enter an operator (+, -, *, /):")
+    val operator = scanner.next()[0]
+
+    println("Enter second number:")
+    val num2 = scanner.nextDouble()
+
+    val result = when (operator) {
+        '+' -> num1 + num2
+        '-' -> num1 - num2
+        '*' -> num1 * num2
+        '/' -> if (num2 != 0.0) num1 / num2 else Double.NaN
+        else -> {
+            println("Error: Invalid operator")
+            return
+        }
+    }
+
+    if (result.isNaN()) {
+        println("Error: Division by zero")
+    } else {
+        println("The result is: $result")
+    }
+}
+__________________________________________________________________________________________________________________________________________________________________________
+ // Kotlin program that uses a loop to iterate through an array, prints the even and odd numbers, and calculates the sum of the even and odd numbers separately.
+fun main() {
+    // Define the array
+    val numbers = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+    // Initialize sums for even and odd numbers
+    var evenSum = 0
+    var oddSum = 0
+
+    // Loop through the array
+    for (number in numbers) {
+        if (number % 2 == 0) {
+            println("$number is even")
+            evenSum += number
+        } else {
+            println("$number is odd")
+            oddSum += number
+        }
+    }
+
+    // Print the sums
+    println("Sum of even numbers: $evenSum")
+    println("Sum of odd numbers: $oddSum")
+}
+
+
+___________________________________________________________________________________________________________________________________________________________________________
+// when in kotlin like switch 
+
+
+
+
+/*var choice =3
+val res = when(choice){
+    1->"hello"
+    2->"hi"
+    3->"Namaste"
+    4->"no need"
+    else ->"kuch nhi"
+}
+println(res)
+
+*/
+
+/*fun main() {
+    val day = 3
+
+    val dayName = when (day) {
+        1 -> "Monday"
+        2 -> "Tuesday"
+        3 -> "Wednesday"
+        4 -> "Thursday"
+        5 -> "Friday"
+        6 -> "Saturday"
+        7 -> "Sunday"
+        else -> "Invalid day"
+    }
+
+    println("The day is $dayName")
+}*/
+
+
+// when expression 
+// Multiple Conditions in a Single Branch:
+fun main() {
+    val day = 5
+
+    val typeOfDay = when (day) {
+        1, 7 -> "Weekend"
+        in 2..6 -> "Weekday"
+        else -> "Invalid day"
+    }
+
+    println("Today is a $typeOfDay")
+}
+/*
+ 1, 7 -> "Weekend": Matches if day is 1 or 7.
+in 2..6 -> "Weekday": Matches if day is in the range from 2 to 6.
+
+ 
+ */
+ 
+ //  Using when as a Statement (No Value Return):
+ fun main() {
+    val grade = 'A'
+
+    when (grade) {
+        'A' -> println("Excellent")
+        'B' -> println("Good")
+        'C' -> println("Fair")
+        'D' -> println("Poor")
+        'F' -> println("Fail")
+        else -> println("Invalid grade")
+    }
+}
+
+ 
+
+
+

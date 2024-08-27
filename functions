@@ -1,1 +1,8 @@
 
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+fun main(){
+   val res= add(20,30) // we need to take val 
+   println(res)
+}

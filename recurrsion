@@ -1,0 +1,55 @@
+
+
+// sum of even using recurssion  
+
+fun sumOfEvenNumbers(n: Int): Int {
+    var sum = 0
+    for (i in 1..n) {
+        if (i % 2 == 0) {
+            sum += i
+        }
+    }
+    return sum
+}
+
+fun main() {
+    val number = 10
+    val result = sumOfEvenNumbers(number)
+    println("Sum of even numbers from 1 to $number is $result")
+}
+
+// sum of n numbers using questions 
+
+fun sumOfNumbers(n: Int): Int {
+    // Base case: if n is 0, the sum is 0
+    return if (n == 0) {
+        0
+    } else {
+        // Recursive case: n + sum of (n-1) numbers
+        n + sumOfNumbers(n - 1)
+    }
+}
+
+fun main() {
+    val number = 5
+    val result = sumOfNumbers(number)
+    println("Sum of first $number numbers is $result")
+}
+
+// factorial of a number 
+fun factorial(n: Int): Int {
+    // Base case: factorial of 0 or 1 is 1
+    return if (n <= 1) {
+        1
+    } else {
+        // Recursive case: n! = n * (n-1)!
+        n * factorial(n - 1)
+    }
+}
+
+fun main() {
+    val number = 5
+    val result = factorial(number)
+    println("Factorial of $number is $result")
+}
+//

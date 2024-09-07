@@ -1,0 +1,22 @@
+//Function to Sum Two Integers
+
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun main() {
+    val result = sum(5, 7)
+    println("The sum of 5 and 7 is: $result")
+}
+
+
+// Function to Check if a String is a Palindrome
+fun isPalindrome(str: String): Boolean {
+    return str == str.reversed()
+}
+
+fun main() {
+    val input = "madam"
+    val result = isPalindrome(input)
+    println("\"$input\" is a palindrome: $result")
+}
